@@ -4,7 +4,7 @@ let button = document.getElementById("searchBtn");
 
 
 function searchWeather(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appId}&units=${units}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appId}&units=${units}`).then(result => {
         return result.json();
     }).then(result => {
         serverResult(result);

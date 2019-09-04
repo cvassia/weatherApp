@@ -5,7 +5,7 @@ let button = document.getElementById("searchBtn");
 
 function searchWeather(city) {
 
-    const proxy = "https://cors-anywhere.herokuapp.com";
+    const proxy = "https://cors-anywhere.herokuapp.com/";
     fetch(`${proxy}http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appId}&units=${units}`).then(result => {
         return result.json();
     }).then(result => {

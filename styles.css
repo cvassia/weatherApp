@@ -4,10 +4,10 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 23px;
     text-shadow: 1px 1.5px 1px rgb(77, 77, 77);
-    height: 25em;
+    height: 35em;
 }
 
 #searchContainer {
@@ -20,7 +20,7 @@ body {
     padding: 10px 20px;
     border: 1px solid rgba(255, 255, 255, 0.048);
     border-radius: 24px;
-    font: normal 15px/normal Verdana, Geneva, sans-serif;
+    font: normal 15px / normal Verdana, Geneva, sans-serif;
     background: rgba(255, 255, 255, 0.479);
     width: 60%;
     margin-top: 50px;
@@ -34,7 +34,7 @@ body {
     padding: 10px;
     border: 1px solid rgba(0, 12, 243, 0.1);
     border-radius: 24px;
-    font: normal 15px/normal Verdana, Geneva, sans-serif;
+    font: normal 15px / normal Verdana, Geneva, sans-serif;
     background: rgba(0, 12, 243, 0.39);
     width: 20%;
     margin-top: 50px;
@@ -65,7 +65,7 @@ body {
 #weatherContainer h1 {
     margin: 5px;
     font-size: 47px;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #weatherDescriptionHeader {
@@ -88,13 +88,48 @@ body {
 }
 
 #humidity,
-#windSpeed {
+#windSpeed,
+#sunrise,
+#sunset {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 31px;
 }
 
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
 
-/* #humidity {
-    padding-left: 17px;
-} */
+#day1,
+#day2,
+#day3,
+#day4 {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+#day5 {
+    font-size: 14px;
+    margin-left: 3px;
+    padding-left: 5px;
+}
+
+#iconImg1,
+#iconImg2,
+#iconImg3,
+#iconImg4,
+#iconImg5 {
+    width: 60px;
+    display: inline-block;
+}
+
+#temp1,
+#temp2,
+#temp3,
+#temp4,
+#temp5 {
+    margin-left: 15px;
+    font-size: 21px;
+}

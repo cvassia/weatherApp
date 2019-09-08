@@ -1,5 +1,5 @@
 body {
-    background-image: url(default.jpg);
+    background-image: url(def.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -69,8 +69,8 @@ body {
 }
 
 #weatherDescriptionHeader {
-    font-size: 41px;
-    vertical-align: 73%;
+    font-size: 25px;
+    vertical-align: 120%;
 }
 
 #temperature {

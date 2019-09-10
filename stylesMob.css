@@ -137,7 +137,6 @@ body {
 
 .two {
 	max-width: 100%;
-
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -145,7 +144,7 @@ body {
 #two {
 	max-width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .fas {
@@ -158,38 +157,18 @@ body {
 #sunrise,
 #sunset {
 	font-size: 20px;
-	margin-top: 13px;
-
 	display: flex;
 	justify-content: center;
 }
 
-#humidity {
-	color: #2a2b6f;
-
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
-}
-
-#windSpeed {
-	/* color: #2d504e;
-
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7); */
-	text-shadow: 0px 1px 1px #4d4d4d;
-	color: #222;
-}
-
 #sunrise {
-	color: #464505;
-
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
-	margin-bottom: 13px;
+	margin-top: 9px;
+	margin-left: 17px;
 }
 
 #sunset {
-	color: #692828;
-
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, .3), 0px -1px 0px rgba(0, 0, 0, .7);
-	margin-bottom: 13px;
+	margin-top: 9px;
+	margin-right: 9px;
 }
 
 #forecast {

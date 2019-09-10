@@ -5,7 +5,7 @@ let button = document.getElementById("searchBtn");
 function searchWeather(city) {
     const proxy = "https://cors-anywhere.herokuapp.com/";
     fetch(
-            `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${appId}&units=${units}`
+            `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${appId}&units=${units}`
         )
         .then(result => {
             return result.json();
@@ -34,6 +34,7 @@ document.addEventListener("keyup", e => {
 
 function serverResult(data) {
     console.log(data);
+   
 
     let switchVar = new Date();
     let switchVar2 = switchVar.getHours();
@@ -1713,6 +1714,13 @@ function serverResult(data) {
     temp3.innerHTML = Math.floor(data.list[24].main.temp) + "&#176";
     temp4.innerHTML = Math.floor(data.list[32].main.temp) + "&#176";
     temp5.innerHTML = Math.floor(data.list[39].main.temp) + "&#176";
+
+    function convertToF(celsius) {
+        return celsius * 9/5 + 32
+      };
+
+      
+      
 
 
 

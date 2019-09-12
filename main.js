@@ -1,6 +1,121 @@
+let movingText = document.getElementsByTagName('h1')[0];
+
+function textEffect(animationName) {
+  var text = movingText.innerHTML,
+		chars = text.length,
+		newText = '',
+		animation = animationName,
+		char,
+		i;
+
+	for (i = 0; i < chars; i += 1) {
+		newText += '<i>' + text.charAt(i) + '</i>';
+	}
+
+	movingText.innerHTML = newText;
+
+	var wrappedChars = document.getElementsByTagName('i'),
+		wrappedCharsLen = wrappedChars.length,
+		j = 0;
+
+	function addEffect () {
+		setTimeout(function () {
+			wrappedChars[j].className = animation;
+			j += 1;
+			if (j < wrappedCharsLen) {
+                addEffect();
+            }
+			}, 100)
+	}
+
+	addEffect();
+};
+
+textEffect('fly-in-out');
+
+
+
+let movingText1 = document.getElementsByTagName('h2')[0];
+
+function textEffect1(animationName) {
+  var text = movingText1.innerHTML,
+		chars = text.length,
+		newText = '',
+		animation = animationName,
+		char,
+		i;
+
+	for (i = 0; i < chars; i += 1) {
+		newText += '<i>' + text.charAt(i) + '</i>';
+	}
+
+	movingText1.innerHTML = newText;
+
+	var wrappedChars = document.getElementsByTagName('i'),
+		wrappedCharsLen = wrappedChars.length,
+		j = 0;
+
+	function addEffect () {
+		setTimeout(function () {
+			wrappedChars[j].className = animation;
+			j += 1;
+			if (j < wrappedCharsLen) {
+                addEffect();
+            }
+			}, 100)
+	}
+
+	addEffect();
+};
+textEffect1('fly-in-out');
+
+
+let movingText2 = document.getElementsByTagName('h3')[0];
+
+function textEffect2(animationName) {
+  var text = movingText2.innerHTML,
+		chars = text.length,
+		newText = '',
+		animation = animationName,
+		char,
+		i;
+
+	for (i = 0; i < chars; i += 1) {
+		newText += '<i>' + text.charAt(i) + '</i>';
+	}
+
+	movingText2.innerHTML = newText;
+
+	var wrappedChars = document.getElementsByTagName('i'),
+		wrappedCharsLen = wrappedChars.length,
+		j = 0;
+
+	function addEffect () {
+		setTimeout(function () {
+			wrappedChars[j].className = animation;
+			j += 1;
+			if (j < wrappedCharsLen) {
+                addEffect();
+            }
+			}, 100)
+	}
+
+	addEffect();
+};
+
+textEffect2('fly-in-out');
+
+
+
+
+
+
+
+
 let appId = "ade413bc0426ddfa59413a49e3349f7e";
 let units = "metric";
 let button = document.getElementById("searchBtn");
+
 
 function searchWeather(city) {
     const proxy = "https://cors-anywhere.herokuapp.com/";
@@ -15,6 +130,7 @@ function searchWeather(city) {
         })
         .catch();
 }
+
 
 button.addEventListener("click", () => {
     let city = document.getElementById("searchInput").value;
@@ -79,6 +195,8 @@ function serverResult(data) {
     let temp3 = document.getElementById("temp3");
     let temp4 = document.getElementById("temp4");
     let temp5 = document.getElementById("temp5");
+
+    document.getElementById("text").style.display = "none";
 
     switch (data.list[0].weather[0].description) {
         case "clear sky":

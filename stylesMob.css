@@ -21,7 +21,7 @@ main {
 	margin: 0px;
 	line-height: 2em;
 }
-i {
+v {
 	display: inline-block;
 	font-style: normal;
 	padding: 0 6px;
@@ -29,7 +29,7 @@ i {
 	background: rgba(255, 255, 255);
 	border-radius: 70%;
 }
-i.fly-in-out {
+v.fly-in-out {
 	animation: fly-in-out 10s;
 }
 
@@ -90,9 +90,8 @@ i.fly-in-out {
 }
 
 .algolia-places {
-	/* width: 100%; */
-	position: relative;
-	direction: ltr;
+	/* position: relative;
+	direction: ltr; */
 	display: inline !important;
 }
 
@@ -136,13 +135,8 @@ i.fly-in-out {
 	justify-items: center;
 }
 
-#weatherMain div {
-	justify-content: center;
-	margin-bottom: 10px;
-}
-
 #weatherContainer h1 {
-	margin-left: 54px;
+	display: flex;
 	justify-content: center;
 	margin-bottom: 19px;
 	font-size: 38px;
@@ -151,10 +145,7 @@ i.fly-in-out {
 
 #iconImg {
 	width: 266px;
-	margin-left: -38px;
-	/* margin: 0 auto; */
-	/* margin-left: 42px; */
-	justify-content: center;
+	margin-left: -47px;
 }
 
 #weatherDescriptionHeader {
@@ -167,7 +158,6 @@ i.fly-in-out {
 
 #temperature {
 	font-size: 55px;
-	/* margin: 19px 0px 23px 80px; */
 	padding-left: 23px;
 	justify-content: center;
 	margin-bottom: 18px;
@@ -175,9 +165,7 @@ i.fly-in-out {
 
 #temperatureMax,
 #temperatureMin {
-	/* margin-left: 30px; */
 	display: inline-block;
-	/* margin-top: 2px; */
 	font-size: 18px;
 	color: #cff7cf;
 }
@@ -196,6 +184,7 @@ i.fly-in-out {
 	max-width: 100%;
 	display: flex;
 	justify-content: space-around;
+	padding-left: 7px;
 }
 
 .fas {
@@ -213,19 +202,20 @@ i.fly-in-out {
 }
 
 #sunrise {
-	margin-top: 9px;
+	margin-top: 20px;
 	margin-left: 17px;
 }
 
 #sunset {
-	margin-top: 9px;
-	margin-right: 9px;
+	margin-top: 20px;
+	margin-right: 13px;
 }
 
 #forecast {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 40px;
+	margin-bottom: 10px;
 }
 
 #day1,
@@ -264,9 +254,22 @@ i.fly-in-out {
 /* media queries */
 
 @media (min-width: 600px) {
+	body {
+		background-repeat: no-repeat;
+		height: 45em;
+	}
+
+	hr {
+		margin-top: 50px;
+	}
+
+	#hr {
+		margin-top: 4px;
+	}
 	.four {
 		display: flex;
 		justify-content: space-around;
+		margin: 10px 0 10px 0;
 	}
 	.two {
 		display: contents;
@@ -277,12 +280,22 @@ i.fly-in-out {
 		display: contents;
 		justify-content: space-between;
 	}
+
+	#sunrise,
+	#sunset {
+		margin-top: 0;
+	}
+
+	#forecast {
+		margin-top: 69px;
+	}
 }
 
 @media (min-width: 992px) {
 	body {
 		max-width: 100%;
 		margin: 0 auto;
+		background-repeat: no-repeat;
 	}
 
 	p,
@@ -297,13 +310,13 @@ i.fly-in-out {
 		padding-left: 50px;
 	}
 	#searchContainer {
-		width: 85%;
+		width: 75%;
 		margin: 0 auto;
 	}
 	#searchInput {
 		display: inline-block;
-		width: 53%;
-		margin-left: 126px;
+		width: 38%;
+		margin-left: 282px;
 		margin-top: 50px;
 		margin-bottom: 59px;
 	}
@@ -312,6 +325,10 @@ i.fly-in-out {
 		width: 10%;
 		margin-top: 50px;
 		margin-bottom: 59px;
+	}
+
+	hr {
+		margin-top: 10px;
 	}
 	#weatherContainer {
 		background-color: rgba(0, 0, 0, 0.486);
@@ -324,18 +341,21 @@ i.fly-in-out {
 		margin-top: -13px;
 		visibility: hidden;
 	}
-	#weatherContainer h1 {
-		margin: 0 0 26px 142px;
-	}
-	#iconImg {
+
+	/* #iconImg {
 		margin-left: -19px;
-	}
+	} */
 	#weatherDescriptionHeader {
 		font-size: 26px;
 	}
 	#temperature {
 		font-size: 50px;
-		margin: 1px 0 -8px 0;
+		margin: 5px 0 -1px 0;
+	}
+
+	#temperatureMax,
+	#temperatureMin {
+		margin-bottom: 25px;
 	}
 
 	#forecast {
@@ -370,5 +390,12 @@ i.fly-in-out {
 	#temp5 {
 		margin-left: 18px;
 		font-size: 21px;
+	}
+}
+
+@media (min-width: 1600px) {
+	#searchContainer {
+		width: 50%;
+		margin: 0 auto;
 	}
 }

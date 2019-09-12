@@ -6,15 +6,15 @@ function textEffect(animationName) {
 		newText = '',
 		animation = animationName,
 		char,
-		i;
+		v;
 
-	for (i = 0; i < chars; i += 1) {
-		newText += '<i>' + text.charAt(i) + '</i>';
+	for (v = 0; v < chars; v += 1) {
+		newText += '<v>' + text.charAt(v) + '</v>';
 	}
 
 	movingText.innerHTML = newText;
 
-	var wrappedChars = document.getElementsByTagName('i'),
+	var wrappedChars = document.getElementsByTagName('v'),
 		wrappedCharsLen = wrappedChars.length,
 		j = 0;
 
@@ -43,15 +43,15 @@ function textEffect1(animationName) {
 		newText = '',
 		animation = animationName,
 		char,
-		i;
+		v;
 
-	for (i = 0; i < chars; i += 1) {
-		newText += '<i>' + text.charAt(i) + '</i>';
+	for (v = 0; v < chars; v += 1) {
+		newText += '<v>' + text.charAt(v) + '</v>';
 	}
 
 	movingText1.innerHTML = newText;
 
-	var wrappedChars = document.getElementsByTagName('i'),
+	var wrappedChars = document.getElementsByTagName('v'),
 		wrappedCharsLen = wrappedChars.length,
 		j = 0;
 
@@ -78,15 +78,15 @@ function textEffect2(animationName) {
 		newText = '',
 		animation = animationName,
 		char,
-		i;
+		v;
 
-	for (i = 0; i < chars; i += 1) {
-		newText += '<i>' + text.charAt(i) + '</i>';
+	for (v = 0; v < chars; v += 1) {
+		newText += '<v>' + text.charAt(v) + '</v>';
 	}
 
 	movingText2.innerHTML = newText;
 
-	var wrappedChars = document.getElementsByTagName('i'),
+	var wrappedChars = document.getElementsByTagName('v'),
 		wrappedCharsLen = wrappedChars.length,
 		j = 0;
 

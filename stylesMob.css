@@ -11,9 +11,9 @@ body {
 
 /* text transform */
 
-h1,
-h2,
-h3 {
+p,
+pre,
+q {
 	position: relative;
 	top: 220px;
 	font-family: 'Syncopate', Helvetica, Arial;

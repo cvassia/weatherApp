@@ -1,4 +1,4 @@
-let movingText = document.getElementsByTagName('h1')[0];
+let movingText = document.getElementsByTagName('p')[0];
 
 function textEffect(animationName) {
   var text = movingText.innerHTML,
@@ -35,7 +35,7 @@ textEffect('fly-in-out');
 
 
 
-let movingText1 = document.getElementsByTagName('h2')[0];
+let movingText1 = document.getElementsByTagName('pre')[0];
 
 function textEffect1(animationName) {
   var text = movingText1.innerHTML,
@@ -70,7 +70,7 @@ function textEffect1(animationName) {
 textEffect1('fly-in-out');
 
 
-let movingText2 = document.getElementsByTagName('h3')[0];
+let movingText2 = document.getElementsByTagName('q')[0];
 
 function textEffect2(animationName) {
   var text = movingText2.innerHTML,

@@ -13,8 +13,7 @@ body {
 
 p,
 section,
-main
- {
+main {
 	position: relative;
 	top: 220px;
 	font-family: 'Syncopate', Helvetica, Arial;
@@ -282,9 +281,20 @@ i.fly-in-out {
 
 @media (min-width: 992px) {
 	body {
-		height: 60em;
 		max-width: 100%;
 		margin: 0 auto;
+	}
+
+	p,
+	section,
+	main {
+		position: relative;
+		top: 220px;
+		font-family: 'Syncopate', Helvetica, Arial;
+		font-size: 24px;
+		margin: 0px;
+		line-height: 2em;
+		padding-left: 50px;
 	}
 	#searchContainer {
 		width: 50%;
@@ -299,7 +309,7 @@ i.fly-in-out {
 	}
 	#searchBtn {
 		display: inline-block;
-		width: 12%;
+		width: 15%;
 		margin-top: 50px;
 		margin-bottom: 59px;
 	}

@@ -297,7 +297,7 @@ i.fly-in-out {
 		padding-left: 50px;
 	}
 	#searchContainer {
-		width: 50%;
+		width: 85%;
 		margin: 0 auto;
 	}
 	#searchInput {
@@ -309,7 +309,7 @@ i.fly-in-out {
 	}
 	#searchBtn {
 		display: inline-block;
-		width: 15%;
+		width: 10%;
 		margin-top: 50px;
 		margin-bottom: 59px;
 	}

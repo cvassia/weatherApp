@@ -12,8 +12,9 @@ body {
 /* text transform */
 
 p,
-pre,
-q {
+section,
+main
+ {
 	position: relative;
 	top: 220px;
 	font-family: 'Syncopate', Helvetica, Arial;

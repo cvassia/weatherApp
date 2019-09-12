@@ -197,6 +197,10 @@ function serverResult(data) {
     let temp5 = document.getElementById("temp5");
 
     document.getElementById("text").style.display = "none";
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "none";
+
+
 
     switch (data.list[0].weather[0].description) {
         case "clear sky":
